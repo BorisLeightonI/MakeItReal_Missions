@@ -134,7 +134,7 @@ function list(){
 }
 
 function bmwSum(){
-    return cars.reduce((a,b)=>a+b.price, 0); 
+    return cars.reduce((a,b)=> b.brand==='BMW'? a+b.price: a, 0); 
 /*     return cars.reduce((a,b)=>{
         console.log(a, b.price);
         return a+b.price
