@@ -1,0 +1,14 @@
+{
+  "name": "ejercicio-de-nodejs",
+  "version": "1.0.0",
+  "description": "Ejercicio con librería Faker",
+  "main": "Ejercicio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Boris Leighton I.",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.4.0"
+  }
+}
