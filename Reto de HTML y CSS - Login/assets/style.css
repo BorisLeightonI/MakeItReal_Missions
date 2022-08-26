@@ -14,12 +14,20 @@ main {
     margin: 50px;
 }
 
-input {
+.inGroup {
     border: #eee solid 1px;
     border-radius: 5px;
     /* display: block; */
     margin: 10px 0;
     height: 30px;
+}
+input {
+    border: none;
+}
+span {
+    /* vertical-align: bottom; */
+    position: relative;
+    bottom: -.15rem;
 }
 h1 {
     font-size: 2rem;
