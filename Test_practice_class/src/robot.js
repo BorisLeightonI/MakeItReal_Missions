@@ -1,31 +1,54 @@
-exports.createRobot = (x,y) => {
-/*     let x = x;
-    let y = y; */
-      // lanza error si x o y están fuera de los límites (0 a 10)
-    // if(x<0||x>10||y<0||y>10) throw new Error('La posición está fuera de los límites')
-    if(x>0 && x<10 || y>0 && y<10){ //Está dentro de los límites 11,9
+exports.createRobot = (x,y, instructions='') => {
+  let facing = 'North';
+  let _x = x;
+  let _y = y;
+  instructions.map(elem => {
+    if(elem==='R') turn_right();
+    if(elem==='L') turn_left();
+    if(elem==='A') advance();
+  });
+  
+function turn_right() {
+  switch (facing) {
+    case 'North':
+    facing = 'East';
+    break;
 
-        const moveUp = () => ++y;
-        const moveDown = () => --y;
-        const moveLeft = () => --x;
-        const moveRight = () => ++x;
-      
-        const getX = () => x
-        const getY = () => y
-        return {
-          moveUp, //- incrementa y en 1
-          moveDown, //- decrementa y en 1.
-          moveLeft, //- decrementa x en 1.
-          moveRight, //- incrementa x en 1 
-          getX, //- retorna x
-          getY, //- retorna y
-       }
-     
-    }else{ //Está fuera de los límites
-        console.log('Posición fuera de los límites, x:', x, ' y: ', y);
-        return 'Posición fuera de los límites';
-    }
+    case 'East':
+      facing = 'South';
+      break;
     
+    case 'South':
+      facing = 'West';
+      break;
+    
+    case 'West':
+      facing = 'North';
+      break;
+  
+    default:
+      break;
+  }
 
+}
+function turn_left() {
+  if(facing==='North') facing = 'West';
+  if(facing==='East') facing = 'North';
+  if(facing==='South') facing = 'East';
+  if(facing==='West') facing = 'South';
+
+}
+function advance() {
+  if(facing==='North' && _y>=0 && _y<=10) ++_y;
+  if(facing==='South' && _y>=0 && _y<=10) --_y;
+  if(facing==='East' && _x>=0 && _x<=10) ++_x;
+  if(facing==='West' && _x>=0 && _x<=10) --_x;
+
+}
+
+const getFacing = () => facing;
+const getPosition = () => {return {_x,_y}};
+
+  return {turn_left, turn_right, advance, getFacing, getPosition}
 
   }
