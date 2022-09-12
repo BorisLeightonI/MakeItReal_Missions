@@ -57,6 +57,10 @@ form label {
   border: 1px solid red;
 }
 
+span {
+  color: red;
+}
+
 input[type='submit'] {
   color: white;
   background-color: rgb(247, 104, 128);
