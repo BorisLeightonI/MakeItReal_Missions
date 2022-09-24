@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getPosts } from "../Store/actions/Posts.action";
+import { getPosts } from "../Store/actions/postAction";
+
 
 const Posts = () => {
   const dispatch = useDispatch()
-  const { posts, loading, error } = useSelector((state) => state.posts)
+  const { posts, loading, error } = useSelector((state) => state.posts);
 
   useEffect(() => {
     dispatch(getPosts())

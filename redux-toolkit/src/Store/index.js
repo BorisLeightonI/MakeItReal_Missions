@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countReducer from "./Reducers/count.reducer";
-import postsReducer from "./Reducers/Posts.reducer";
-import textReducer from "./Reducers/Text.reducer";
+import countSlice from "./Reducers/CountSlice";
+import postsSlice from "./Reducers/PostSlice";
+import textSlice from "./Reducers/TextSlice";
 
 
 const store = configureStore({
     reducer: {
-        count: countReducer,
-        posts: postsReducer,
-        text: textReducer
+        counts: countSlice,
+        posts: postsSlice,
+        texts: textSlice
     }
 });
 

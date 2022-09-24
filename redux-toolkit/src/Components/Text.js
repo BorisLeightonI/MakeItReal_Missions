@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 
 const Text = () => {
-  const username = useSelector(state => state.text.username)
+  const username = useSelector(store => store.texts.username)
 
   return (
     <h2>{username}</h2>

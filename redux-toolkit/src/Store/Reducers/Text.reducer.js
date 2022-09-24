@@ -3,13 +3,13 @@ import { createReducer } from "@reduxjs/toolkit"
 const CHANGE_TEXT = "CHANGE_TEXT"
 
 //action creator
-export const changeText = (value) => {
+/* export const changeText = (value) => {
 
   return {
     type: CHANGE_TEXT,
     payload: value
   }
-}
+} */
 
 const initialState = {
   username: ""
@@ -35,4 +35,4 @@ const textReducer = createReducer(initialState, builder =>{
   }
 } */
 
-export default textReducer
+// export default textReducer
