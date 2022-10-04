@@ -18,8 +18,8 @@
   * var: manera antigua de definir variables. El scope de esta es global, permite definición sin asignación y no se recomienda su uso. 
   * let y const son la manera que recomienda ECMASCRIPT para definir variables. _let_ para asignaciones dinámicas y _const_ para asignaciones estáticas de direcciones de memoria.   
 4. ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
-  1. git branch rama-1
-  2. git checkout -b rama-1
+    1. git branch rama-1
+    2. git checkout -b rama-1
 
 5. Explicar la diferencia entre git merge y git rebase.
   * git merge mantiene a salvo la historia de la rama secundaria, crea un nuevo commit que une ambas ramas sin eliminarlas, en cambio git rebase no mantiene a salvo la historia de la rama secundaria, sino que re-escribe la historia de la rama principal integrando los commits de la rama secundaria en la rama principal, no crea un commit de unión adicional
