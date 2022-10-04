@@ -1,6 +1,6 @@
 # Preguntas
 1. ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
-  * Son 4 aunque recientemente se ha incorporado una quinta, estas son:
+  Son 4 aunque recientemente se ha incorporado una quinta, estas son:
     1. Sprint Planning: Reunión inicial donde participa el equipo scrum completo. Se divide en dos partes, la primera es liderada por el _product owner_ y define _*qué*_ se hará en el siguiente sprint, la segunda define el *_Cómo_* se hará por parte del equipo.
     2. Daily Scrum: Es una reunión diaria en la que participa el equipo de desarrollo respondiendo a las siguientes preguntas:
       1. ¿Qué hice ayer para aportar al sprint goal?
