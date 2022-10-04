@@ -27,7 +27,7 @@
   * PR es una solicitud para que los colaboradores del repositorio descargen los cambios hechos por el solicitante mediante el comando git pull.
 7. ¿Qué es el Virtual DOM?
   * Es una copia espejo del DOM real el cual sirve al prpósito de ver reflejado el elemento que cambia con respecto al DOM original y así optimizar el proceso de actualización de mismo.
-8. Dado el siguiente [codePen](https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100), el cual solo tiene un HTML, por medio de css llegar a esta respuesta. Imagen. (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
+8. Dado el siguiente [codePen](https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100), el cual solo tiene un HTML, por medio de css llegar a esta [respuesta](https://raw.githubusercontent.com/makeitrealcamp/assesment-1-programa-top/main/assets/services-section.gif). (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
 ## Respuesta
 h2 {
   text-align: center;
