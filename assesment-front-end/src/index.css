@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Modularizar */
+.app-prod {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* margin-left: 150px; */
+}
+
+.card__container {
+  border: 1px solid dodgerblue;
+  border-radius: 20px;
+  flex-basis: 25%;
+  margin: 10px;
+}
