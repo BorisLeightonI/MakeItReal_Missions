@@ -28,16 +28,20 @@
 7. ¿Qué es el Virtual DOM?
   * Es una copia espejo del DOM real el cual sirve al prpósito de ver reflejado el elemento que cambia con respecto al DOM original y así optimizar el proceso de actualización de mismo.
 8. Dado el siguiente [codePen](https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100), el cual solo tiene un HTML, por medio de css llegar a esta respuesta. Imagen. (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
+## Respuesta
 h2 {
   text-align: center;
   background-color: gray;
 }
+
 span {
   background-color: green;
 }
+
 li {
   list-style-type: none;
 }
+
 .c-services {
   display: flex;
   justify-content: center;
