@@ -6,9 +6,11 @@
       1. ¿Qué hice ayer para aportar al sprint goal?
       2. ¿Qué voy a hacer hoy para contribuir al sprint goal?
       3. ¿Hay algún impedimento que me impida entregar?   
+
     3. Sprint Review: Es la reunión que ocurre al final del sprint donde el development team presenta a los stakeholders el incremento del producto. Esta reunión organizada por el product owner, se estudia cuál es la situación y se actualiza el product backlog con las posibles nuevas condiciones .
     4. Sprint Retrospective: El objetivo de esta es hacer una reflexión sobre el último sprint e identificar posibles mejoras, en este escenario es normal rotar el rol de facilitador dentro de los miembros del equipo.  
     5. Sprint Grooming o Refinement: El refinamiento del Product Backlog es una práctica recomendada para asegurar que éste siempre esté preparado.
+
 2. ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
   * Es un diagrama que se utiliza para analizar y comunicar la estructura del producto que se está desarrollando
   * Existen diversas herramientas que sirven de apoyo al respecivo proyecto, entre ellas destacan: Figma, AdobeXd, Scketch, UXPin, MockFlow
@@ -18,6 +20,7 @@
 4. ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
   1. git branch rama-1
   2. git checkout -b rama-1
+
 5. Explicar la diferencia entre git merge y git rebase.
   * git merge mantiene a salvo la historia de la rama secundaria, crea un nuevo commit que une ambas ramas sin eliminarlas, en cambio git rebase no mantiene a salvo la historia de la rama secundaria, sino que re-escribe la historia de la rama principal integrando los commits de la rama secundaria en la rama principal, no crea un commit de unión adicional
 6. ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
