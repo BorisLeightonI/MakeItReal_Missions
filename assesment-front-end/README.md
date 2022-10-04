@@ -3,9 +3,9 @@
   Son 4 aunque recientemente se ha incorporado una quinta, estas son:
     1. Sprint Planning: Reunión inicial donde participa el equipo scrum completo. Se divide en dos partes, la primera es liderada por el _product owner_ y define _*qué*_ se hará en el siguiente sprint, la segunda define el *_Cómo_* se hará por parte del equipo.
     2. Daily Scrum: Es una reunión diaria en la que participa el equipo de desarrollo respondiendo a las siguientes preguntas:
-      1. ¿Qué hice ayer para aportar al sprint goal?
-      2. ¿Qué voy a hacer hoy para contribuir al sprint goal?
-      3. ¿Hay algún impedimento que me impida entregar?   
+      * ¿Qué hice ayer para aportar al sprint goal?
+      * ¿Qué voy a hacer hoy para contribuir al sprint goal?
+      * ¿Hay algún impedimento que me impida entregar?   
 
     3. Sprint Review: Es la reunión que ocurre al final del sprint donde el development team presenta a los stakeholders el incremento del producto. Esta reunión organizada por el product owner, se estudia cuál es la situación y se actualiza el product backlog con las posibles nuevas condiciones .
     4. Sprint Retrospective: El objetivo de esta es hacer una reflexión sobre el último sprint e identificar posibles mejoras, en este escenario es normal rotar el rol de facilitador dentro de los miembros del equipo.  
