@@ -7,13 +7,6 @@ function About() {
     <p>Aquí me pueden contactar:</p>
     <p>correo: borisleighton@gmail.com </p>
     <p>github: BorisLeightonI</p>
-    {/* 
-    Nombre
-Descripción
-Imagen
-Correo
-Link a tu github
-    */}
   </>;
 }
 
