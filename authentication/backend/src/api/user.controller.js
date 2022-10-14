@@ -6,7 +6,7 @@ module.exports = {
   async signup(req, res) {
     try {
       const { email, password } = req.body
-
+      console.log('request body:',req.body);
       // bcrypt.hash dos argumentos
       // - La contraseña que queremos encriptar
       // - El salt hace referencias al número de procesos para encriptar
@@ -16,7 +16,7 @@ module.exports = {
       const token = jwt.sign(
         { id: user._id },
         process.env.SECRET_KEY,
-        { expiresIn: 60 * 60 * 24 }
+        { expiresIn: 60 * 60 * qw24 }
       )
 
       res.status(201).json({ message: "User created successfully", data: { email, token } })
@@ -50,7 +50,6 @@ module.exports = {
       res.status(201).json({ message: "User login successfully", data: { email, token } })
     } catch (error) {
       res.status(400).json({ message: "User could not login", error: error.message })
-
     }
   }
 }
