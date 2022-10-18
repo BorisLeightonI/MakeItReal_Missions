@@ -1,28 +1,33 @@
 import React, { useState } from "react"
+import Button from "./Button"
+import Input from "./Input"
 
 
 const Form: React.FC = () => {
-  const [dataForm, setDataForm] = useState(undefined)
+  const [dataForm, setDataForm] = useState('')
+  const [display, setDisplay] = useState(false)
 
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target.value)
+    setDataForm(e.target.value)
   }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    // console.log('Form data: ', e);
+    console.log(dataForm);
+    setDisplay(true);
   }
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="fullname" onChange={handleChange} />
-      <textarea name="description" onChange={handleChange} />
-      <select name="country" onChange={handleChange}>
-        <option value="colombia">Colombia</option>
-        <option value="panama">Paname</option>
-      </select>
+  return <>
+    <h3>Sign In</h3>
+     <form onSubmit={handleSubmit}>
+      <Input type={'text'} handleChange={handleChange}/>
+      <Button type="submit" handleSubmit={handleSubmit} >Submit</Button>
+      {display&&<p>{dataForm}</p>}
     </form>
-  )
+  </>
 }
 
 export default Form
