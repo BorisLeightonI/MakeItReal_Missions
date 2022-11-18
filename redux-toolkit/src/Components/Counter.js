@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 const Counter = () => {
   
   const dataCounter = useSelector((reducer) => {
-    console.log('Counter -> reducer:', reducer);  
+    // console.log('Counter -> reducer:', reducer);  
     return reducer.counts.count
   })
 

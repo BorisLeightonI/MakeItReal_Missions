@@ -7,6 +7,7 @@ export const inputText = createSlice({
     },
     reducers:{
         changeText(store,action) {
+            console.log('changeText reducer payload', action.payload)
             store.username = action.payload
         }
 
